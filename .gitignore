@@ -15,3 +15,5 @@ venv
 /.idea/dataSources/
 /.idea/dynamic.xml
 /.idea/uiDesigner.xml
+
+.vscode
