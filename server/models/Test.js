@@ -1,18 +1,16 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const TestSchema = new mongoose.Schema({
-
-    name: {
-        type: String,
-        required: true
-    },
-    message: {
-        type: String,
-        required: true
-    }
-
+  name: {
+    type: String,
+    required: true,
+  },
+  message: {
+    type: String,
+    required: true,
+  },
 });
 
-const Test = mongoose.model('Test', TestSchema);
+const Test = mongoose.model("Test", TestSchema);
 
 export default Test;

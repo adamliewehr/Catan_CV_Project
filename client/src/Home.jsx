@@ -1,14 +1,9 @@
 function Home() {
-
-    return (
-
-        <>
-        <h1>Catan App! In React</h1>
-        
-        </>
-    );
+  return (
+    <>
+      <h1>Catan App! In React</h1>
+    </>
+  );
 }
 
-
-export default Home
-
+export default Home;
