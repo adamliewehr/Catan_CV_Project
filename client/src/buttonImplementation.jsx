@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import * as d3 from "d3";
 
 import Histogram2 from "./d3Plots/testPlot2.jsx";
+import WebcamCapture from "./cameraTest.jsx";
 
 function MainPage1() {
   const [data, setData] = useState([]);
@@ -27,6 +28,7 @@ function MainPage1() {
       <br />
 
       <Histogram2 width={500} height={500} data={data}></Histogram2>
+      <WebcamCapture></WebcamCapture>
     </>
   );
 }

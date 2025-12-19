@@ -1,0 +1,4 @@
+Running the server:
+uvicorn main:app --reload
+
+This launches the python server
