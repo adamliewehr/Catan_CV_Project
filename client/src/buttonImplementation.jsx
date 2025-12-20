@@ -28,7 +28,7 @@ function MainPage1() {
       <br />
 
       <Histogram2 width={500} height={500} data={data}></Histogram2>
-      <WebcamCapture></WebcamCapture>
+      <WebcamCapture apiString={"/api/getDiceImage"}></WebcamCapture>
     </>
   );
 }

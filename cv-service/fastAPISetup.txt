@@ -1,4 +1,10 @@
+pip freeze > requirements.txt
+is how you update the requirements.txt
+
+
 Running the server:
 uvicorn main:app --reload
 
 This launches the python server
+
+using python 3.11.14

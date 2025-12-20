@@ -4,6 +4,7 @@ import "./App.css";
 import TestPage from "./testPage";
 import Home from "./Home";
 import MainPage1 from "./buttonImplementation";
+import HandDetection from "./handDetectionTest";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
             <NavLink to='/mainPage1' className='navLink'>
               mainPage1
             </NavLink>
+            <NavLink to='/handTest' className='navLink'>
+              handTest
+            </NavLink>
           </div>
         </nav>
 
@@ -27,6 +31,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/testPage' element={<TestPage />} />
           <Route path='/mainPage1' element={<MainPage1 />} />
+          <Route path='/handTest' element={<HandDetection />} />
         </Routes>
       </BrowserRouter>
     </>

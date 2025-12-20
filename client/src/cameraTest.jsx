@@ -1,7 +1,7 @@
 import React, { useRef, useState, useCallback } from "react";
 import Webcam from "react-webcam";
 
-const WebcamCapture = () => {
+function WebcamCapture({ apiString }) {
   const webcamRef = useRef(null);
   //   const [imgSrc, setImgSrc] = useState(null); // State to store the captured image source
 
@@ -24,7 +24,7 @@ const WebcamCapture = () => {
     // e.preventDefault(); // Stops the page reload
 
     try {
-      const response = await fetch("/api/getDiceImage", {
+      const response = await fetch(apiString, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ base64: imageSrc }),
@@ -57,6 +57,6 @@ const WebcamCapture = () => {
       {/* {imgSrc && <button onClick={() => setImgSrc(null)}>Retake</button>} */}
     </div>
   );
-};
+}
 
 export default WebcamCapture;
