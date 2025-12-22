@@ -5,14 +5,14 @@ const MARGIN = { top: 30, right: 30, bottom: 40, left: 50 };
 const BUCKET_NUMBER = 8;
 const BUCKET_PADDING = 1;
 
-function Histogram2({ width, height, data }) {
+function Histogram2({ width, height, data, maxNum }) {
   const axesRef = useRef(null);
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
 
   const xScale = useMemo(() => {
     const max = Math.max(...data);
-    return d3.scaleLinear().domain([2, 13]).range([10, boundsWidth]);
+    return d3.scaleLinear().domain([2, maxNum]).range([10, boundsWidth]);
   }, [data, width]);
 
   const buckets = useMemo(() => {

@@ -5,6 +5,7 @@ import TestPage from "./testPage";
 import Home from "./Home";
 import MainPage1 from "./buttonImplementation";
 import HandDetection from "./handDetectionTest";
+import DigitalDice from "./rollDigitalDice";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             <NavLink to='/handTest' className='navLink'>
               handTest
             </NavLink>
+            <NavLink to='/digitalDice' className='navLink'>
+              Digital Dice
+            </NavLink>
           </div>
         </nav>
 
@@ -32,6 +36,7 @@ function App() {
           <Route path='/testPage' element={<TestPage />} />
           <Route path='/mainPage1' element={<MainPage1 />} />
           <Route path='/handTest' element={<HandDetection />} />
+          <Route path='/digitalDice' element={<DigitalDice />} />
         </Routes>
       </BrowserRouter>
     </>
