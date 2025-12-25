@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
 # print(cv2.__version__)
 
@@ -18,7 +18,7 @@ catImg = cv2.imread("./images/cat.jpg", 1)
 # catImg = cv2.add(catImg, 200)
 
 # plt.imshow(catImg)
-catImg = np.flip(catImg, 0)
+# catImg = np.flip(catImg, 0)
 # plt.imshow(catImg[:, :, ::-1]) # to get the real color
 
 # drawing on images
