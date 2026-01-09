@@ -1,6 +1,8 @@
 pip freeze > requirements.txt
 is how you update the requirements.txt
 
+Active the venv if you haven't already:
+source ./venv/bin/activate
 
 Running the server:
 uvicorn main:app --reload
